@@ -19,15 +19,16 @@ requirements:
     - pip
     - python >=3.8
   run:
+    - cryotypes
     - dask-core
     - magicgui >=0.4.0
     - naaf >=0.2.2
+    - napari
     - numpy
     - pandas
     - python >=3.8
     - scipy
     - scikit-image
-    - napari
 
 test:
   imports:
