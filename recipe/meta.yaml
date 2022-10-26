@@ -18,8 +18,9 @@ requirements:
   host:
     - pip
     - python >=3.8
+    - setuptolls-scm
   run:
-    - cryohub
+    - cryohub >=0.3.2
     - cryotypes
     - dask-core
     - magicgui >=0.4.0
