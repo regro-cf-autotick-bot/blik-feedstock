@@ -18,7 +18,7 @@ requirements:
   host:
     - pip
     - python >=3.8
-    - setuptolls-scm
+    - setuptools-scm
   run:
     - cryohub >=0.3.2
     - cryotypes
