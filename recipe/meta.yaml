@@ -1,5 +1,5 @@
 {% set name = "blik" %}
-{% set version = "0.3.1" %}
+{% set version = "0.3.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/blik-{{ version }}.tar.gz
-  sha256: 77eca01992a38168f80cd13ad9af07da2f1931940eaf0fc6b02fa3d4fb2a43b3
+  sha256: f37f026bf47fe20dc0fc5ca567138eb7d69809513bb09f09c947ef0430cea7d3
 
 build:
   noarch: python
@@ -18,24 +18,28 @@ requirements:
   host:
     - pip
     - python >=3.8
+    - setuptools-scm
   run:
+    - cryohub >=0.3.2
+    - cryotypes
     - dask-core
     - magicgui >=0.4.0
     - naaf >=0.2.2
+    - napari
     - numpy
     - pandas
     - python >=3.8
     - scipy
     - scikit-image
-    - napari
 
 test:
   imports:
     - blik
     - blik.reader
+    - blik.utils
+    - blik.writer
     - blik.widgets.file_reader
     - blik.widgets.filter
-    - blik.widgets.volume_selector
   commands:
     - pip list
     # - pip check  # This can uncommented when naaf relaxes the dependencies
