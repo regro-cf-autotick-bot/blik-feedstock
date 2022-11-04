@@ -40,7 +40,6 @@ test:
     - blik.writer
     - blik.widgets.file_reader
     - blik.widgets.filter
-    - blik.widgets.main_widget
   commands:
     - pip list
     # - pip check  # This can uncommented when naaf relaxes the dependencies
