@@ -1,5 +1,5 @@
 {% set name = "blik" %}
-{% set version = "0.3.3" %}
+{% set version = "0.3.4" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/blik-{{ version }}.tar.gz
-  sha256: 6ddbb89aba956cc792abaaabeac350efcec7f43e54f2db51a2c394f866941d1f
+  sha256: ee605a40887e0884013c8b6f962119c7075d82af66b613627717540564b95c3f
 
 build:
   noarch: python
@@ -29,8 +29,8 @@ requirements:
     - numpy
     - pandas
     - python >=3.8
-    - scipy
     - scikit-image
+    - scipy
 
 test:
   imports:
