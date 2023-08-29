@@ -1,5 +1,5 @@
 {% set name = "blik" %}
-{% set version = "0.3.4" %}
+{% set version = "0.5.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/blik-{{ version }}.tar.gz
-  sha256: ee605a40887e0884013c8b6f962119c7075d82af66b613627717540564b95c3f
+  sha256: 416910dfde19a7573b3a0344c0ccc5229b0886b533ab486721d3ab4e0381aeab
 
 build:
   noarch: python
