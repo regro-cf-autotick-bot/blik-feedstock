@@ -1,11 +1,11 @@
-About blik
-==========
+About blik-feedstock
+====================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/blik-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/gutsche-lab/blik
 
 Package license: GPL-3.0-only
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/blik-feedstock/blob/main/LICENSE.txt)
 
 Summary: Python tool for visualising and interacting with cryo-ET and subtomogram averaging data.
 
