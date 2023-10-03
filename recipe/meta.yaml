@@ -16,20 +16,22 @@ build:
 
 requirements:
   host:
+    - hatch-vcs
+    - hatchling
     - pip
-    - python >=3.8
-    - setuptools-scm
+    - python >=3.9
   run:
-    - cryohub >=0.3.2
-    - cryotypes
+    - cryohub >=0.5.0
+    - cryotypes >=0.2.0
     - dask-core
+    - einops
     - magicgui >=0.4.0
-    - naaf >=0.2.2
+    - morphosamplers >=0.0.5
     - napari
     - numpy
     - pandas
-    - python >=3.8
-    - scikit-image
+    - python >=3.9
+    - scikit-image  # Not listed as requirement
     - scipy
 
 test:
@@ -42,15 +44,16 @@ test:
     - blik.widgets.filter
   commands:
     - pip list
-    # - pip check  # This can uncommented when naaf relaxes the dependencies
+    - pip check
   requires:
     - pip
 
 about:
-  home: https://github.com/gutsche-lab/blik
+  home: https://pypi.org/project/blik
   summary: Python tool for visualising and interacting with cryo-ET and subtomogram averaging data.
   license: GPL-3.0-only
   license_file: LICENSE
+  dev_url: https://github.com/gutsche-lab/blik
 
 extra:
   recipe-maintainers:
