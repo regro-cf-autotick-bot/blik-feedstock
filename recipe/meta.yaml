@@ -44,7 +44,7 @@ test:
     - blik.widgets.filter
   commands:
     - pip list
-    - pip check  # This can uncommented when naaf relaxes the dependencies
+    - pip check
   requires:
     - pip
 
