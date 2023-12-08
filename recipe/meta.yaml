@@ -32,7 +32,7 @@ requirements:
     - packaging
     - pandas
     - pydantic <2
-    - python >=  3.9
+    - python >=3.9
     - scikit-image             # Imported in source but not listed as requirement
     - scipy
 
