@@ -21,17 +21,19 @@ requirements:
     - pip
     - python >=3.9
   run:
-    - cryohub >=0.5.1
+    - cryohub >=0.6.1
     - cryotypes >=0.2.0
     - dask-core
     - einops
     - magicgui >=0.4.0
-    - morphosamplers >=0.0.5
+    - morphosamplers >=0.0.10
     - napari
     - numpy
+    - packaging
     - pandas
-    - python >=3.9
-    - scikit-image  # Not listed as requirement
+    - pydantic <2
+    - python >=  3.9
+    - scikit-image             # Imported in source but not listed as requirement
     - scipy
 
 test:
